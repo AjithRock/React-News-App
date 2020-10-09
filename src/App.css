@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300;1,500;1,600;1,700&display=swap");
+
+:root {
+  --primary: #1b1b1b;
+}
+
+.App {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  height: 64px;
+  width: 100%;
+  background-color: var(--primary);
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.header-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header-title {
+  font-size: 22px;
+  color: white;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+}
+.header-title span {
+  padding: 6px;
+  font-size: 33px;
+  margin-right: 6px;
+}
+
+.header-searchbar input {
+  color: #fff;
+  background: #303030;
+  width: inherit;
+  border: none;
+  transition: 0.3s all ease;
+  box-shadow: none;
+  padding: 0.375rem 0.75rem;
+  font-size: 14px;
+  border-radius: 15px;
+  padding-left: 30px;
+  margin-right: 0.35rem;
+}
+
+.search-icon-wrapper {
+  display: inline-block;
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 8px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  margin: 8px auto;
+}
+
+.card:hover {
+  border-color: transparent;
+  -webkit-box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16),
+    0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16),
+    0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  height: 200px;
+}
+
+.artical-container {
+  display: block;
+  transition: 0.3s all ease;
+  width: 350px;
+  text-decoration: none;
+}
+.artical-content-body {
+  padding: 0rem 0.45rem;
+}
+
+.artical-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.artical-title {
+  text-align: left;
+  color: #000;
+  opacity: 0.9;
+  font-weight: 600;
+}
+
+.artical-description {
+  color: #000;
+  opacity: 0.6;
+  text-align: left;
+  margin-top: 0px;
+}
+
+.artical-footer {
+  font-size: 12px;
+  text-align: left;
+  opacity: 0.5;
+  color: #000;
+}
+
+.detail-heading {
+  text-align: left;
+}
+
+.detail-heading span {
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+.detail-img-wrapper img {
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.details-content {
+  text-align: left;
+  margin-top: 24px;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top-color: rgb(243, 243, 243);
+  border-top-style: solid;
+  border-top-width: 8px;
+  border-top: 8px solid var(--primary);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 0.7s linear infinite;
+  margin: 2rem auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
